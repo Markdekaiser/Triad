@@ -1,9 +1,10 @@
 <nav class="navbar navbar-expand-lg nav-design justify-content-between ">
-    <div>
-        <span class="navbar-brand title-design">Triad</span>
-    </div>
+
 
     <div *ngIf="!isLoggedIn">
+        <div>
+            <span class="navbar-brand title-design">Triad</span>
+        </div>
         <div class="navbar-nav" >
             <a class="nav-item nav-link active nav-design-link " [routerLink]="['']">About Us</a>
             <a class="nav-item nav-link nav-design-link " [routerLink]="['/login']">Login</a>
@@ -12,7 +13,7 @@
     
     <div *ngIf="isLoggedIn">
         <div class="navbar-nav" >
-            <a class="nav-item nav-link active nav-design-link " [routerLink]="['']">Profile</a>
+            <a class="nav-item nav-link active nav-design-link " [routerLink]="['cart']">Cart</a>
             <a class="nav-item nav-link nav-design-link " [routerLink]="['']" (click)="onLogOut()">Log Out</a>
         </div>
     </div>

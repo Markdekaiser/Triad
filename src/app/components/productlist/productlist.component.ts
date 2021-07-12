@@ -21,10 +21,9 @@ products: any[] = [];
       .subscribe((res: any) => {
         if (res.data) {
           this.products = res.data;
-          console.log(res.data);
-          console.log(this.products);
+
         } else if (res.error) {
-          console.log('Wala');
+
         }
       });
   }

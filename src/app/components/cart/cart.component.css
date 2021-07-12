@@ -72,7 +72,7 @@ html, body {
     padding: 0 1.5em;
 }
 .section-header {
-    font-family: "";
+    font-family: 'Teko', sans-serif;
     font-weight: normal;
     text-align: center;
     font-size: 2.5em;

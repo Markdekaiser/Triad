@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     })
     
     if(sessionStorage.getItem("account_id")){
-      this.router.navigate(['cart']);
+      this.router.navigate(['product']);
     }
   }
 
